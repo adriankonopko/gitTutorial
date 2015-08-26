@@ -1,0 +1,10 @@
+@mixin hMain($fontSize, $fontWeight, $fornColor){
+	font-size: $fontSize;
+	font-weight: $fontWeight;
+	color: $fornColor;
+}
+
+h1, h2{
+	@include hMain(2em, bold, blue);
+	padding: 8px 4px;
+}
